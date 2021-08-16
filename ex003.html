@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex003</title>
+</head>
+<body>
+    <!--Este exercício consiste em solicitar  um valor e mostrar seu antecessor e sucessor.-->
+    <h1>Antes e Depois.</h1>
+    <button onclick="verificar()">Antecessor e Sucesssor</button>
+    <script>
+        function verificar(){
+            let numero = window.prompt('Digite um número qualquer')
+            let n = Number(numero)
+            let m = n + 1
+            let s = n - 1
+            alert(`O número escolhido foi ${n}, o seu sucessor é ${m} e o seu antecessor é ${s}`)
+        }
+    </script>
+</body>
+</html>
