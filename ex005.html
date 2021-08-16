@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 005</title>
+</head>
+<body>
+    <h1>Conversor de Medidas</h1>
+    <button onclick="converter()">Converter</button>
+    <p id="resposta"></p>
+    <script>
+        function converter(){
+           let valor = window.prompt('Digite um valor em metros(m)') 
+           let v = Number(valor)
+           let res = document.getElementById('resposta').innerHTML = `<h1>A distância de ${v} metros, corresponde a...</h1><br>${v/1000} quilômetros (KM) <br> ${v*10} hectômetros (HM) <br> ${v*100} decâmetros (Dam)` 
+
+        }
+    </script>
+</body>
+</html>
