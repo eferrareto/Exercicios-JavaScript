@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 006</title>
+</head>
+<body>
+    <h1>Conversor de temperaturas</h1>
+    <button onclick="converter()">Converter</button>
+    <p id="resposta">Clique no botão acima para iniciar.</p>
+    <script>
+        function converter(){
+            let celcius = window.prompt('Digite um valor em ºC (célsius)')
+            let c = Number(celcius)
+            let kelvin = c + 273
+            let faren = (c * 1.8) + 32
+            document.getElementById('resposta').innerHTML = `<h2>A temperatura ${c}ºC, corresponde a...</h2>`
+            document.getElementById('resposta').innerHTML += `${kelvin}ºK (Kelvin)<br>`
+            document.getElementById('resposta').innerHTML += `${faren}ºF (Fahrenheit)`
+        }
+    </script>
+</body>
+</html>

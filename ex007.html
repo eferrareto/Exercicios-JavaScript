@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 007</title>
+</head>
+<body>
+    <h1>Conversor R$ -> US$</h1>
+    <button onclick="converter()">Converter</button>
+    <p id="resposta">Clique no botão acima para iniciar.</p>
+    <script>
+        let dolar = window.prompt('Antes de mais nada. Quanto está a cotação do dolar agora?')
+        function converter(){
+            let d = Number(dolar)
+            let saldo = window.prompt('Quanto você possuí de saldo?')
+            let s = Number(saldo)
+            let sd = s / d
+            document.getElementById('resposta').innerHTML = `Com o saldo de R$${s} você possuí ao todo US$${sd}`
+        }
+    </script>
+</body>
+</html>
